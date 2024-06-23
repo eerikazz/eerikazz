@@ -1,0 +1,101 @@
+:root {
+    --bg: #ffffff;
+
+    --border: #F8F9FB;
+
+    --selected: #F8F9FB;
+    --hover: #ECEEF4;
+
+    --text: #1C2B33;
+    --text-secondary: #8D9498;
+    --accent: #0064E0;
+
+    --feature-green: #89D1BD;
+    --feature-purple: #B0A5E9;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+
+    border: none;
+
+    text-decoration: none;
+
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    box-sizing: border-box;
+
+    height: 100lvh;
+    padding: 24px;
+
+    display: grid;
+    grid-template-columns: minmax(128px, 256px);
+    place-content: center;
+}
+
+/* text */
+.accent_text {
+    font-size: 16px;
+    color: var(--accent);
+}
+
+.meta {
+    font-size: 12px;
+    color: var(--text-secondary);
+}
+
+.text {
+    font-size: 14px;
+    color: var(--text);
+}
+
+/* components */
+.card {
+    padding: 6px;
+
+    border: 1px solid var(--border);
+    border-radius: 16px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.cardHeader {
+    padding: 12px 16px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+/* link btn */
+.link_btn {
+    padding: 12px 16px;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.link_btn:hover {
+    cursor: pointer;
+    background-color: var(--hover);
+}
+
+.dot {
+    width: 6px;
+    height: 6px;
+
+    border-radius: 6px;
+}
+
+.dot_green {
+    background-color: var(--feature-green);
+}
